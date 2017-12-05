@@ -1,0 +1,44 @@
+<hr class="invisible">
+<hr class="invisible">
+<hr class="invisible">
+
+<div class="container-fluid">
+  <div class="text-dark">
+    <h1>Entity Limits</h1>
+  </div>
+  <hr>
+  <button (click)="goBack()" class="btn btn-outline-danger fa fa-lg fa-arrow-left" style="z-index: 1"> Back</button>
+  <hr class="invisible">
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Entity Id</th>
+        <th>Risk Taker Group Name</th>
+        <th>Risk Taker Name</th>
+        <th>Facility Id</th>
+        <th>Facility Type</th>
+        <th>Product</th>
+        <th>Risk Type</th>
+        <th>Currency</th>
+        <th>Exposure Amount</th>
+        <th>Total Current Limit</th>
+        <th>Total Approved Limit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let limit of limits" class="tabledata">
+        <td>{{limit.Entity_Id}}</td>
+        <td>{{limit.Risk_Taker_Group_Name}}</td>
+        <td>{{limit.Risk_Taker_Name}}</td>
+        <td>{{limit.Facility_Id}}</td>
+        <td>{{limit.Facility_Type}}</td>
+        <td>{{limit.Product}}</td>
+        <td>{{limit.Risk_Type}}</td>
+        <td>{{limit.Currency}}</td>
+        <td>{{limit.Exposure_Amount}}</td>
+        <td>{{limit.Total_Current_Limit}}</td>
+        <td>{{limit.Total_Approved_Limit}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

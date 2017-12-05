@@ -1,0 +1,23 @@
+<hr class="invisible">
+<hr class="invisible">
+<hr class="invisible">
+
+<!-- <div class="loader"></div> -->
+
+<div class="container">
+
+  <div class="text-dark">
+    <h1>Parent Banks</h1>
+    <hr>
+  </div>
+  <div class="row data">
+    <div *ngFor="let parentEntity of parentEntities" class="col-md-4">
+        <div class="card-body btn-block btn-outline-danger text-left tabledata" [routerLink]="['/childrentities', parentEntity.Parent_Entity_Id]">
+          <p class="badge badge-light badge-pill">{{parentEntity.Parent_Entity_Id}}</p>
+          <p>{{parentEntity.Parent_Entity_Name}}</p>
+        </div>
+        <hr>
+    </div>
+  </div>
+</div>
+

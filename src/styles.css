@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Navigation link styles */
+nav {
+  background: url('./assets/img/nav-bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+nav a {
+  text-decoration: none;
+  border-radius: 4px;
+  color: black;
+}
+
+nav a.active {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.btn {
+  cursor: pointer;
+}

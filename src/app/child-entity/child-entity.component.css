@@ -1,0 +1,12 @@
+body {
+  background: url();
+}
+
+.tabledata {
+  border-radius: 5px;
+  border: solid 1px;
+}
+
+.tabledata:hover, .btn {
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+<hr class="invisible">
+<hr class="invisible">
+<hr class="invisible">
+
+<div class="container">
+  <div class="text-dark">
+    <h1>Children Banks</h1>
+    <hr>
+    <button (click)="goBack()" class="btn btn-outline-danger fa fa-lg fa-arrow-left" style="z-index: 1"> Back</button>
+    <hr class="invisible">
+  </div>
+  <div class="">
+     Bank Name: <h1 class="outline"><strong>{{title}}</strong></h1>
+     <hr>
+  </div>
+  <div class="row">
+    <div *ngFor="let childEntity of childrenEntities" class="col-md-4">
+      <div class="card-body btn-block btn-outline-danger text-left tabledata" [routerLink]="['/entitylimits', childEntity.Entity_Id]">
+        <p class="badge badge-light badge-">{{childEntity.Entity_Id}}</p>
+        <span class="badge badge-dark">{{childEntity.Relationship_Type}}</span>
+        <!-- <hr> -->
+        <p>{{childEntity.Entity_Name}}</p>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <hr class="invisible">
+</div>
